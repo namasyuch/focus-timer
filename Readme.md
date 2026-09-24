@@ -38,3 +38,7 @@ I also identified the 7-segment display and started testing it with the SevSeg l
 * Make the countdown work
 * Add the timer presets
 * Make the buzzer alert when the timer finishes
+
+
+
+<img width="1280" height="720" alt="WIN_20260924_23_59_07_Pro" src="https://github.com/user-attachments/assets/a067a51d-afd2-451e-98ba-0fc47ab2c2f7" />
