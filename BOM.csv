@@ -1,0 +1,9 @@
+Component,Quantity,Purpose
+Arduino Nano,1,Main controller
+4-digit 7-segment display (5461AS),1,Displays the timer
+Push buttons,4,Select timer presets
+Buzzer,1,Timer alert
+Breadboard,1,Prototyping
+Jumper wires,Several,Connections
+USB cable,1,Programming and powering the Nano
+220-330 ohm resistors,8,Current limiting for 7-segment display
