@@ -41,4 +41,4 @@ I also identified the 7-segment display and started testing it with the SevSeg l
 
 ## Wiring Diagram
 
-![Focus Timer Wiring Diagram](wiring-diagram.png)
+![Focus Timer Wiring Diagram](Edraw_AI_generated_1.png)
