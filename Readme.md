@@ -48,4 +48,5 @@ I also identified the 7-segment display and started testing it with the SevSeg l
 ![Focus Timer_Video](20260930_141525.mp4)
 
 ## Working Model Reference 
-![Focus Timer_Representation]
+
+![Focus Timer](Screenshot 2026-09-30 141842.png)
