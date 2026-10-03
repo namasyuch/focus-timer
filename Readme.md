@@ -43,10 +43,10 @@ I also identified the 7-segment display and started testing it with the SevSeg l
 
 ![Focus Timer Wiring Diagram](WIN_20261001_17_53_07_Pro.jpg)
 
+## Working Model Reference 
+
+![Focus Timer](Screenshot_2026-09-30_141842.png)
+
 ## Working Video
 
 ![Focus Timer_Video](20260930_141525.mp4)
-
-## Working Model Reference 
-
-![Focus Timer](Screenshot 2026-09-30 141842.png)
