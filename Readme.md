@@ -103,4 +103,8 @@ The Focus Timer is working with the Arduino Nano, 32×8 LED matrix, joystick and
 
 ## Hardware Design
 
+![Final Focus Timer Case](Screenshot%202026-10-06%20183830.png)
 [Focus Timer Case STL](cad/Focus%20Timer%20Case.stl)
+
+
+
