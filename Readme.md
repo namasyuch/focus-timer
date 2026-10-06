@@ -1,48 +1,74 @@
 # Focus Timer
 
-A simple physical focus timer that I am building with an Arduino Nano.
+Focus Timer is an Arduino-based timer made with an Arduino Nano, a 32×8 MAX7219 LED matrix, a joystick, and a buzzer.
 
-The idea is to have a small timer where I can choose a preset using buttons and see the countdown on a 4-digit 7-segment display. A buzzer will notify me when the timer is finished.
+The timer has preset durations and uses the joystick to control the timer. The matrix shows the countdown, and the buzzer sounds when the timer reaches zero.
 
-## Current setup
+## Features
 
-* Arduino Nano
-* 4-digit 7-segment display (5461AS)
-* 4 push buttons
-* Buzzer
-* Breadboard and jumper wires
+* 5, 10, 15 and 20 minute presets
+* 32×8 LED matrix countdown
+* Joystick controls
+* Start, pause, resume and reset
+* Buzzer notification when the timer ends
+* Sleep mode after inactivity
 
-## Timer presets
+## Components
 
-For testing, the buttons are planned as:
+| Component               |  Quantity |
+| ----------------------- | --------: |
+| Arduino Nano            |         1 |
+| 32×8 MAX7219 LED Matrix |         1 |
+| Joystick Module         |         1 |
+| Buzzer                  |         1 |
+| Jumper Wires            | As needed |
 
-* Button 1 → 5 minutes
-* Button 2 → 10 minutes
-* Button 3 → 15 minutes
-* Button 4 → 20 minutes
+## Wiring
 
-## Progress
+### 32×8 MAX7219 Matrix
 
-Today I set up the Arduino Nano, power rails, buttons and buzzer. I tested the buzzer and it works.
+| Matrix | Arduino Nano |
+| ------ | ------------ |
+| VCC    | 5V           |
+| GND    | GND          |
+| DIN    | D11          |
+| CS     | D10          |
+| CLK    | D13          |
 
-I also identified the 7-segment display and started testing it with the SevSeg library. The test code compiled, but I ran into a COM3 upload problem with the Arduino, so the display still needs to be tested.
+### Joystick
 
-## Files
+| Joystick | Arduino Nano |
+| -------- | ------------ |
+| VCC      | 5V           |
+| GND      | GND          |
+| VRX      | A0           |
+| VRY      | A1           |
+| SW       | D3           |
 
-`focus_timer.ino` contains the Arduino code for the project.
+### Buzzer
 
-## What's next
-
-* Fix the Arduino upload problem
-* Connect and test the 7-segment display
-* Make the countdown work
-* Add the timer presets
-* Make the buzzer alert when the timer finishes
+| Buzzer   | Arduino Nano |
+| -------- | ------------ |
+| Positive | A2           |
+| Negative | GND          |
 
 ## Wiring Diagram
 
-![Focus Timer Wiring Diagram](WIN_20261001_17_53_07_Pro.jpg)
+I made the wiring diagram myself and included it in the repository to show the connections used in the actual build.
 
-## Working Video
+## Assembly
 
-![Focus Timer_Video](20260930_141525.mp4)
+1. Connect the MAX7219 matrix to the Arduino Nano.
+2. Connect the joystick to the Nano.
+3. Connect the buzzer to A2 and GND.
+4. Upload the Arduino sketch.
+5. Power the project and use the joystick to select a timer preset.
+6. Press the joystick to start the countdown.
+
+## How It Works
+
+When the project starts, the matrix shows the timer interface.
+
+The joystick is used to select one of the preset timer durations. Pressing the joystick starts the timer. The timer can be paused, resumed or reset using the joystick.
+
+The remaining time is displayed on the 32×8
