@@ -71,4 +71,32 @@ When the project starts, the matrix shows the timer interface.
 
 The joystick is used to select one of the preset timer durations. Pressing the joystick starts the timer. The timer can be paused, resumed or reset using the joystick.
 
-The remaining time is displayed on the 32×8
+The remaining time is displayed on the 32×8 LED matrix. When the countdown reaches zero, the buzzer sounds.
+
+## Project Image
+
+![Focus Timer working](WIN_20261001_17_53_07_Pro.jpg)
+
+## Working Demo
+
+[Watch the Focus Timer working](20260930_141525.mp4)
+
+## Code
+
+The Arduino source code for the project is included in this repository.
+
+### Libraries Used
+
+* MD_Parola
+* MD_MAX72XX
+* SPI
+
+## What I Learned
+
+I learned how to control a MAX7219 LED matrix, read joystick input, and build timer logic on an Arduino.
+
+I also had to change the display design during development when my original 4-digit 7-segment setup was not working properly. The final version uses a 32×8 matrix and a joystick, which made the project easier to control.
+
+## Current Build
+
+The Focus Timer is working with the Arduino Nano, 32×8 LED matrix, joystick and buzzer.
