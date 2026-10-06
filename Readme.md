@@ -100,3 +100,7 @@ I also had to change the display design during development when my original 4-di
 ## Current Build
 
 The Focus Timer is working with the Arduino Nano, 32×8 LED matrix, joystick and buzzer.
+
+## Hardware Design
+
+[Focus Timer Case STL](cad/Focus%20Timer%20Case.stl)
