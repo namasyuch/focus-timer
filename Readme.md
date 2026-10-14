@@ -102,7 +102,7 @@ I also had to change the display design during development when my original 4-di
 The Focus Timer is working with the Arduino Nano, 32×8 LED matrix, joystick and buzzer.
 
 
-## Final Csasing 
+## Final Casing 
 
 ![Final Focus Timer Case](Screenshot%202026-10-06%20183830.png)
 
