@@ -1,114 +1,106 @@
 # Focus Timer
 
-Focus Timer is an Arduino-based timer made with an Arduino Nano, a 32×8 MAX7219 LED matrix, a joystick, and a buzzer.
+Focus Timer is an Arduino-based timer built with an Arduino Nano, a 32×8 MAX7219 LED matrix, a joystick, and a buzzer.
 
-The timer has preset durations and uses the joystick to control the timer. The matrix shows the countdown, and the buzzer sounds when the timer reaches zero.
+It lets the user select a preset duration, control the countdown using the joystick, and receive an audible notification when the timer finishes.
 
 ## Features
 
-* 5, 10, 15 and 20 minute presets
-* 32×8 LED matrix countdown
-* Joystick controls
-* Start, pause, resume and reset
-* Buzzer notification when the timer ends
-* Sleep mode after inactivity
+- 5, 10, 15, and 20-minute presets
+- Countdown displayed on a 32×8 LED matrix
+- Joystick controls
+- Start, pause, resume, and reset
+- Buzzer notification when the timer ends
+- Sleep mode after inactivity
 
 ## Components
 
-| Component               |  Quantity |
-| ----------------------- | --------: |
-| Arduino Nano            |         1 |
-| 32×8 MAX7219 LED Matrix |         1 |
-| Joystick Module         |         1 |
-| Buzzer                  |         1 |
-| Jumper Wires            | As needed |
+| Component | Quantity |
+|---|---:|
+| Arduino Nano | 1 |
+| 32×8 MAX7219 LED matrix | 1 |
+| Joystick module | 1 |
+| Buzzer | 1 |
+| Jumper wires | As needed |
 
 ## Wiring
 
-### 32×8 MAX7219 Matrix
+### 32×8 MAX7219 LED Matrix
 
-| Matrix | Arduino Nano |
-| ------ | ------------ |
-| VCC    | 5V           |
-| GND    | GND          |
-| DIN    | D11          |
-| CS     | D10          |
-| CLK    | D13          |
+| Matrix pin | Arduino Nano |
+|---|---|
+| VCC | 5V |
+| GND | GND |
+| DIN | D11 |
+| CS | D10 |
+| CLK | D13 |
 
 ### Joystick
 
-| Joystick | Arduino Nano |
-| -------- | ------------ |
-| VCC      | 5V           |
-| GND      | GND          |
-| VRX      | A0           |
-| VRY      | A1           |
-| SW       | D3           |
+| Joystick pin | Arduino Nano |
+|---|---|
+| VCC | 5V |
+| GND | GND |
+| VRX | A0 |
+| VRY | A1 |
+| SW | D3 |
 
 ### Buzzer
 
-| Buzzer   | Arduino Nano |
-| -------- | ------------ |
-| Positive | A2           |
-| Negative | GND          |
+| Buzzer pin | Arduino Nano |
+|---|---|
+| Positive | A2 |
+| Negative | GND |
 
 ## Wiring Diagram
 
-I made the wiring diagram myself and included it in the repository to show the connections used in the actual build.
+![Focus Timer Circuit Diagram](circuit_image.png)
+
+[Open the editable circuit in Cirkit Designer](https://app.cirkitdesigner.com/project/df783cec-c46b-44b2-bc0e-42a454f36963)
+
+*The circuit diagram uses substitute symbols for the Arduino Nano and 32×8 matrix. Verify the connections against the actual hardware before treating the diagram as final.*
 
 ## Assembly
 
-1. Connect the MAX7219 matrix to the Arduino Nano.
+1. Connect the LED matrix to the Arduino Nano.
 2. Connect the joystick to the Nano.
 3. Connect the buzzer to A2 and GND.
 4. Upload the Arduino sketch.
-5. Power the project and use the joystick to select a timer preset.
+5. Power the circuit and select a timer preset using the joystick.
 6. Press the joystick to start the countdown.
 
 ## How It Works
 
-When the project starts, the matrix shows the timer interface.
+When the project starts, the LED matrix displays the timer interface. The joystick is used to select a preset duration and control the countdown.
 
-The joystick is used to select one of the preset timer durations. Pressing the joystick starts the timer. The timer can be paused, resumed or reset using the joystick.
-
-The remaining time is displayed on the 32×8 LED matrix. When the countdown reaches zero, the buzzer sounds.
+The remaining time is displayed on the matrix. When the countdown reaches zero, the buzzer sounds to notify the user.
 
 ## Project Image
 
-![Focus Timer working](WIN_20261001_17_53_07_Pro.jpg)
+![Focus Timer working](Screenshot%202026-09-30%20141842.png)
 
-## Working Demo
+### Working Demo
 
-[Watch the Focus Timer working](20260930_141525.mp4)
-
-## Code
-
-The Arduino source code for the project is included in this repository.
-
-### Libraries Used
-
-* MD_Parola
-* MD_MAX72XX
-* SPI
-
-## What I Learned
-
-I learned how to control a MAX7219 LED matrix, read joystick input, and build timer logic on an Arduino.
-
-I also had to change the display design during development when my original 4-digit 7-segment setup was not working properly. The final version uses a 32×8 matrix and a joystick, which made the project easier to control.
-
-## Current Build
-
-The Focus Timer is working with the Arduino Nano, 32×8 LED matrix, joystick and buzzer.
-
-
-## Final Casing 
-
-![Final Focus Timer Case](Screenshot%202026-10-06%20183830.png)
+[Watch the Focus Timer demo](20260930_141525.mp4)
 
 ## Hardware Design
 
-[Focus Timer Case STL](cad/Focus%20Timer%20Case.stl)
+The enclosure model is included in the `cad` folder.
 
+[View the Focus Timer Case STL](cad/Focus%20Timer%20Case.stl)
 
+## Libraries Used
 
+- MD_Parola
+- MD_MAX72XX
+- SPI
+
+## What I Learned
+
+I learned how to control a MAX7219 LED matrix, read joystick inputs, and implement timer logic using an Arduino.
+
+During development, I changed the display from my original four-digit seven-segment setup to a 32×8 LED matrix and joystick.
+
+## Current Build
+
+The project uses an Arduino Nano, a 32×8 LED matrix, a joystick, and a buzzer. The wiring diagram and enclosure model are included in the repository.
