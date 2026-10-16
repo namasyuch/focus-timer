@@ -87,18 +87,24 @@ The remaining time is displayed on the matrix. When the countdown reaches zero, 
 
 The Focus Timer includes a 3D enclosure model and a simplified component-placement assembly created using Onshape.
 
+### CAD Assembly Preview
+
+![Focus Timer CAD Assembly](cad/Focus_Timer_Assembly.png)
+
+### Onshape Workspace
+
+![Focus Timer Onshape Workspace](cad/Focus_Timer_Onshape_Workspace.png)
+
 ### CAD Files
 
-- **Assembly Preview:** [`Focus_Timer_Assembly.png`](cad/Focus_Timer_Assembly.png)
-- **Onshape Workspace Screenshot:** [`Focus_Timer_Onshape_Workspace.png`](cad/Focus_Timer_Onshape_Workspace.png)
-- **Assembly Model (STEP):** [`Focus_Timer_Assembly.step`](cad/Focus_Timer_Assembly.step)
-- **Enclosure STL:** [`Focus Timer Case.stl`](cad/Focus%20Timer%20Case.stl)
-- **FreeCAD Project:** [`f.FCStd`](cad/f.FCStd)
-- **Enclosure STEP:** [`focus_timer_case-Focus_Timer_Case001.step`](cad/focus_timer_case-Focus_Timer_Case001.step)
+- [Focus Timer Assembly (STEP)](cad/Focus_Timer_Assembly.step)
+- [Focus Timer Case (STL)](cad/Focus%20Timer%20Case.stl)
+- [FreeCAD Project](cad/f.FCStd)
+- [Enclosure STEP](cad/focus_timer_case-Focus_Timer_Case001.step)
 
 ### Assembly Components
 
-The assembly represents the approximate placement of the following components:
+The assembly shows the approximate placement of the following components:
 
 - Arduino Nano
 - 32×8 LED matrix
@@ -110,7 +116,7 @@ The assembly represents the approximate placement of the following components:
 
 ### Design Goal
 
-The enclosure and assembly help visualize the project's physical layout and plan the component arrangement before final assembly.
+The enclosure and assembly help visualize the project's physical layout and plan component placement before final assembly.
 
 ## Libraries Used
 
@@ -126,4 +132,4 @@ During development, I changed the display from my original four-digit seven-segm
 
 ## Current Build
 
-The project uses an Arduino Nano, a 32×8 LED matrix, a joystick, and a buzzer. The wiring diagram, working demo, and enclosure model are included in the repository. The component-placement assembly is a simplified CAD representation intended to support enclosure planning and documentation.
+The project uses an Arduino Nano, a 32×8 LED matrix, a joystick, and a buzzer. The repository includes the wiring diagram, working demo, and enclosure model. The component-placement assembly is a simplified CAD representation intended to support enclosure planning and documentation.
