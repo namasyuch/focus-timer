@@ -1,12 +1,3 @@
-### CAD Assembly Preview
-
-![Focus Timer CAD Assembly](Screenshot%202026-10-16%20212003.png)
-
-### CAD Assembly Preview
-
-![Focus Timer CAD Assembly](cad/Screenshot%202026-10-16%20212003.png)
-
-
 # Focus Timer
 
 Focus Timer is an Arduino-based timer built with an Arduino Nano, a 32×8 MAX7219 LED matrix, a joystick, and a buzzer.
@@ -98,7 +89,7 @@ The Focus Timer includes a 3D enclosure model and a simplified component-placeme
 
 ### CAD Assembly Preview
 
-![Focus Timer CAD Assembly](cad/Screenshot%202026-10-16%20212003.png)
+![Focus Timer CAD Assembly](Screenshot%202026-10-16%20212003.png)
 
 ### Onshape Workspace
 
