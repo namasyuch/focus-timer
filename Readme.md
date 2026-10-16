@@ -89,7 +89,7 @@ The Focus Timer includes a 3D enclosure model and a simplified component-placeme
 
 ### CAD Assembly Preview
 
-![Focus Timer CAD Assembly](cad/Focus_Timer_Assembly.png)
+![Focus Timer CAD Assembly](cad/Screenshot%202026-10-16%20212003.png)
 
 ### Onshape Workspace
 
