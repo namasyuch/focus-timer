@@ -93,10 +93,7 @@ The Focus Timer includes a 3D enclosure model and a simplified component-placeme
 
 ### CAD Files
 
-- [Focus Timer Assembly (STEP)](cad/Focus_Timer_Assembly.step)
 - [Focus Timer Case (STL)](cad/Focus%20Timer%20Case.stl)
-- [FreeCAD Project](cad/f.FCStd)
-- [Enclosure STEP](cad/focus_timer_case-Focus_Timer_Case001.step)
 
 ### Assembly Components
 
